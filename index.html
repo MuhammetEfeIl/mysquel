@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Öğrenci Bilgi Formu</title>
+</head>
+<body>
+    <h2>Öğrenci Bilgi Formu</h2>
+    <form action="gonder.php" method="GET">
+        <label for="ogr_ad">Öğrenci Adı:</label>
+        <input type="text" id="ogr_ad" name="ogr_ad" required><br><br>
+        
+        <label for="ogr_soyad">Öğrenci Soyadı:</label>
+        <input type="text" id="ogr_soyad" name="ogr_soyad" required><br><br>
+        
+        <label for="ogr_no">Öğrenci Numarası:</label>
+        <input type="text" id="ogr_no" name="ogr_no" required><br><br>
+        
+        <label for="ogr_sinif">Öğrenci Sınıfı:</label>
+        <input type="text" id="ogr_sinif" name="ogr_sinif" required><br><br>
+        
+        <label for="cinsiyet">Öğrenci Cinsiyeti:</label>
+        <select id="cinsiyet" name="cinsiyet">
+            <option value="Erkek">Erkek</option>
+            <option value="Kız">Kız</option>
+        </select><br><br>
+        
+        <label for="ogr_alan">Öğrenci Alanı:</label>
+        <input type="text" id="ogr_alan" name="ogr_alan"><br><br>
+        
+        <label for="ogr_dtarih">Öğrenci Doğum Tarihi:</label>
+        <input type="date" id="ogr_dtarih" name="ogr_dtarih" required><br><br>
+        
+        <input type="submit" value="Gönder">
+    </form>
+</body>
+</html>
